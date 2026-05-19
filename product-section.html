@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koleksi Produk</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ===== PASTE STYLE INI KE DALAM <style> DI index.html KAMU ===== */
+
+    #products {
+      background: #1a1a1a;
+      padding: 60px 20px;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .products-title {
+      text-align: center;
+      color: #f0c040;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .product-card {
+      background: #2a2a2a;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      cursor: pointer;
+      border: 1px solid #3a3a3a;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(240, 192, 64, 0.2);
+      border-color: #f0c040;
+    }
+
+    .product-img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+      background: #333;
+    }
+
+    /* Placeholder kalau belum ada gambar */
+    .product-img-placeholder {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background: linear-gradient(135deg, #333 0%, #444 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+
+    .product-info {
+      padding: 14px 16px 18px;
+    }
+
+    .product-name {
+      color: #e0e0e0;
+      font-size: 0.88rem;
+      font-weight: 600;
+      line-height: 1.4;
+      margin-bottom: 10px;
+      /* Batasi 2 baris */
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .product-stars {
+      color: #f0c040;
+      font-size: 0.8rem;
+      margin-bottom: 8px;
+    }
+
+    .product-stars span {
+      color: #888;
+      margin-left: 4px;
+      font-size: 0.75rem;
+    }
+
+    .product-pricing {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .product-discount-badge {
+      background: #f0c040;
+      color: #1a1a1a;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
+
+    .product-price-original {
+      color: #888;
+      font-size: 0.78rem;
+      text-decoration: line-through;
+    }
+
+    .product-price-final {
+      color: #f0c040;
+      font-size: 1.1rem;
+      font-weight: 700;
+      width: 100%;
+      margin-top: 2px;
+    }
+
+    .product-badge-prime {
+      margin-top: 6px;
+      display: inline-block;
+      background: #0070f3;
+      color: white;
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 3px;
+      letter-spacing: 1px;
+    }
+
+    /* Responsive: layar kecil tetap 2 kolom */
+    @media (max-width: 700px) {
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+      .products-title { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== PASTE SECTION INI KE DALAM index.html KAMU (sebelum </body>) ===== -->
+<section id="products">
+  <h2 class="products-title">🛒 Koleksi Produk</h2>
+  <div class="products-grid">
+
+    <!-- PRODUK 1 — GANTI: src gambar, nama, harga asli, diskon, harga final, rating, jumlah review -->
+    <div class="product-card">
+      <div class="product-img-placeholder">🧱</div>
+      <!-- Kalau sudah punya gambar, ganti div diatas dengan:
+      <img src="img/produk1.jpg" alt="Nama Produk 1" class="product-img"> -->
+      <div class="product-info">
+        <div class="product-name">GANTI: Nama Produk 1 — tulis nama lengkap barangmu di sini</div>
+        <div class="product-stars">★★★★☆ <span>66 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-13%</span>
+          <span class="product-price-original">Rp 500.000</span>
+          <span class="product-price-final">Rp 435.000</span>
+        </div>
+        <span class="product-badge-prime">PRIME</span>
+      </div>
+    </div>
+
+    <!-- PRODUK 2 -->
+    <div class="product-card">
+      <div class="product-img-placeholder">🏰</div>
+      <div class="product-info">
+        <div class="product-name">GANTI: Nama Produk 2 — tulis nama lengkap barangmu di sini</div>
+        <div class="product-stars">★★★★☆ <span>240 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-10%</span>
+          <span class="product-price-original">Rp 700.000</span>
+          <span class="product-price-final">Rp 630.000</span>
+        </div>
+        <span class="product-badge-prime">PRIME</span>
+      </div>
+    </div>
+
+    <!-- PRODUK 3 -->
+    <div class="product-card">
+      <div class="product-img-placeholder">🗼</div>
+      <div class="product-info">
+        <div class="product-name">GANTI: Nama Produk 3 — tulis nama lengkap barangmu di sini</div>
+        <div class="product-stars">★★★★☆ <span>126 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-12%</span>
+          <span class="product-price-original">Rp 380.000</span>
+          <span class="product-price-final">Rp 334.000</span>
+        </div>
+        <span class="product-badge-prime">PRIME</span>
+      </div>
+    </div>
+
+    <!-- PRODUK 4 -->
+    <div class="product-card">
+      <div class="product-img-placeholder">🚗</div>
+      <div class="product-info">
+        <div class="product-name">GANTI: Nama Produk 4 — tulis nama lengkap barangmu di sini</div>
+        <div class="product-stars">★★★★★ <span>188 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-20%</span>
+          <span class="product-price-original">Rp 1.200.000</span>
+          <span class="product-price-final">Rp 960.000</span>
+        </div>
+        <span class="product-badge-prime">PRIME</span>
+      </div>
+    </div>
+
+    <!-- PRODUK 5 -->
+    <div class="product-card">
+      <div class="product-img-placeholder">🦸</div>
+      <div class="product-info">
+        <div class="product-name">GANTI: Nama Produk 5 — tulis nama lengkap barangmu di sini</div>
+        <div class="product-stars">★★★★☆ <span>95 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-15%</span>
+          <span class="product-price-original">Rp 450.000</span>
+          <span class="product-price-final">Rp 382.000</span>
+        </div>
+        <span class="product-badge-prime">PRIME</span>
+      </div>
+    </div>
+
+    <!-- PRODUK 6 -->
+    <div class="product-card">
+      <div class="product-img-placeholder">🏙️</div>
+      <div class="product-info">
+        <div class="product-name">GANTI: Nama Produk 6 — tulis nama lengkap barangmu di sini</div>
+        <div class="product-stars">★★★★★ <span>312 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-8%</span>
+          <span class="product-price-original">Rp 850.000</span>
+          <span class="product-price-final">Rp 782.000</span>
+        </div>
+        <span class="product-badge-prime">PRIME</span>
+      </div>
+    </div>
+
+    <!-- PRODUK 7 -->
+    <div class="product-card">
+      <div class="product-img-placeholder">🌉</div>
+      <div class="product-info">
+        <div class="product-name">GANTI: Nama Produk 7 — tulis nama lengkap barangmu di sini</div>
+        <div class="product-stars">★★★★☆ <span>77 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-18%</span>
+          <span class="product-price-original">Rp 600.000</span>
+          <span class="product-price-final">Rp 492.000</span>
+        </div>
+        <span class="product-badge-prime">PRIME</span>
+      </div>
+    </div>
+
+    <!-- PRODUK 8 -->
+    <div class="product-card">
+      <div class="product-img-placeholder">⚔️</div>
+      <div class="product-info">
+        <div class="product-name">GANTI: Nama Produk 8 — tulis nama lengkap barangmu di sini</div>
+        <div class="product-stars">★★★★★ <span>201 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-25%</span>
+          <span class="product-price-original">Rp 900.000</span>
+          <span class="product-price-final">Rp 675.000</span>
+        </div>
+        <span class="product-badge-prime">PRIME</span>
+      </div>
+    </div>
+
+    <!-- PRODUK 9 -->
+    <div class="product-card">
+      <div class="product-img-placeholder">🏛️</div>
+      <div class="product-info">
+        <div class="product-name">GANTI: Nama Produk 9 — tulis nama lengkap barangmu di sini</div>
+        <div class="product-stars">★★★★☆ <span>54 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-5%</span>
+          <span class="product-price-original">Rp 320.000</span>
+          <span class="product-price-final">Rp 304.000</span>
+        </div>
+        <span class="product-badge-prime">PRIME</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ===== AKHIR SECTION PRODUK ===== -->
+
+</body>
+</html>
