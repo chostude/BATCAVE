@@ -1,0 +1,39 @@
+IP SESUAI BUKA WEB 
+<!-- Cari bagian ini -->
+<h1 class="text-white text-5xl tm-logo-font mb-5">The Batcave</h1>
+<p class="tm-text-gold tm-text-2xl">the ultimate LEGO Batman garage</p>
+
+<!-- Tambahkan ini -->
+<p class="text-white text-lg mt-3 font-mono" id="ip-display">IP: loading...</p>
+
+<script>
+  fetch('https://api.ipify.org?format=json')
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById('ip-display').textContent = 'IP: ' + data.ip;
+    })
+    .catch(() => {
+      document.getElementById('ip-display').textContent = 'IP: ' + location.hostname;
+    });
+</script>
+
+KLO SCROLL KEBAWAH ADA EFEK HITAM DLLU
+<script>
+const sections = document.querySelectorAll('.video-section');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transition = 'opacity 1s ease';
+        } else {
+            entry.target.style.opacity = '0';
+            entry.target.style.transition = 'opacity 1s ease';
+        }
+    });
+}, {threshold: 0.3});
+
+sections.forEach(section => {
+    observer.observe(section);
+});
+</script>
+

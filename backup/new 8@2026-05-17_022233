@@ -1,0 +1,206 @@
+<section id="products">
+  <h2 class="products-title">🦇 The Batcave Fleet</h2>
+  <div class="products-grid">
+ 
+    <div class="product-card">
+      <div class="slider-wrapper">
+        <div class="slider-track">
+          <div class="slide">🚗</div>
+          <div class="slide">🦇</div>
+          <div class="slide">⚡</div>
+        </div>
+        <button class="slider-btn prev" onclick="slide(this,-1)">&#8249;</button>
+        <button class="slider-btn next" onclick="slide(this,1)">&#8250;</button>
+        <div class="slider-dots">
+          <div class="dot active"></div><div class="dot"></div><div class="dot"></div>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">LEGO Batman Batmobile Classic Series 1966</div>
+        <div class="product-stars">★★★★★ <span>100 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-30%</span>
+          <span class="product-price-original">Rp 1.000.000</span>
+          <span class="product-price-final">Rp 700.000</span>
+        </div>
+        <span class="product-badge badge-prime">PRIME</span>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <div class="slider-wrapper">
+        <div class="slider-track">
+          <div class="slide">🏙️</div>
+          <div class="slide">🦇</div>
+          <div class="slide">🌃</div>
+        </div>
+        <button class="slider-btn prev" onclick="slide(this,-1)">&#8249;</button>
+        <button class="slider-btn next" onclick="slide(this,1)">&#8250;</button>
+        <div class="slider-dots">
+          <div class="dot active"></div><div class="dot"></div><div class="dot"></div>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">LEGO Batman Batcave Shadow Box Edition</div>
+        <div class="product-stars">★★★★☆ <span>88 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-20%</span>
+          <span class="product-price-original">Rp 1.500.000</span>
+          <span class="product-price-final">Rp 1.200.000</span>
+        </div>
+        <span class="product-badge badge-bestseller">BEST SELLER</span>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <div class="slider-wrapper">
+        <div class="slider-track">
+          <div class="slide">✈️</div>
+          <div class="slide">🦇</div>
+          <div class="slide">💥</div>
+        </div>
+        <button class="slider-btn prev" onclick="slide(this,-1)">&#8249;</button>
+        <button class="slider-btn next" onclick="slide(this,1)">&#8250;</button>
+        <div class="slider-dots">
+          <div class="dot active"></div><div class="dot"></div><div class="dot"></div>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">LEGO Batman Batwing Ultimate Fighter</div>
+        <div class="product-stars">★★★★★ <span>120 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-15%</span>
+          <span class="product-price-original">Rp 900.000</span>
+          <span class="product-price-final">Rp 765.000</span>
+        </div>
+        <span class="product-badge badge-prime">PRIME</span>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <div class="slider-wrapper">
+        <div class="slider-track">
+          <div class="slide">🏍️</div>
+          <div class="slide">🦇</div>
+          <div class="slide">🌙</div>
+        </div>
+        <button class="slider-btn prev" onclick="slide(this,-1)">&#8249;</button>
+        <button class="slider-btn next" onclick="slide(this,1)">&#8250;</button>
+        <div class="slider-dots">
+          <div class="dot active"></div><div class="dot"></div><div class="dot"></div>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">LEGO Batman Batcycle Night Rider</div>
+        <div class="product-stars">★★★★☆ <span>75 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-25%</span>
+          <span class="product-price-original">Rp 800.000</span>
+          <span class="product-price-final">Rp 600.000</span>
+        </div>
+        <span class="product-badge badge-bestseller">BEST SELLER</span>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <div class="slider-wrapper">
+        <div class="slider-track">
+          <div class="slide">🚁</div>
+          <div class="slide">🦇</div>
+          <div class="slide">⚙️</div>
+        </div>
+        <button class="slider-btn prev" onclick="slide(this,-1)">&#8249;</button>
+        <button class="slider-btn next" onclick="slide(this,1)">&#8250;</button>
+        <div class="slider-dots">
+          <div class="dot active"></div><div class="dot"></div><div class="dot"></div>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">LEGO Batman Batcopter Rescue Mission</div>
+        <div class="product-stars">★★★★★ <span>55 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-10%</span>
+          <span class="product-price-original">Rp 750.000</span>
+          <span class="product-price-final">Rp 675.000</span>
+        </div>
+        <span class="product-badge badge-prime">PRIME</span>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <div class="slider-wrapper">
+        <div class="slider-track">
+          <div class="slide">🚢</div>
+          <div class="slide">🦇</div>
+          <div class="slide">🌊</div>
+        </div>
+        <button class="slider-btn prev" onclick="slide(this,-1)">&#8249;</button>
+        <button class="slider-btn next" onclick="slide(this,1)">&#8250;</button>
+        <div class="slider-dots">
+          <div class="dot active"></div><div class="dot"></div><div class="dot"></div>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">LEGO Batman Batboat Gotham Harbor</div>
+        <div class="product-stars">★★★★☆ <span>62 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-18%</span>
+          <span class="product-price-original">Rp 650.000</span>
+          <span class="product-price-final">Rp 533.000</span>
+        </div>
+        <span class="product-badge badge-bestseller">BEST SELLER</span>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <div class="slider-wrapper">
+        <div class="slider-track">
+          <div class="slide">🤖</div>
+          <div class="slide">🦇</div>
+          <div class="slide">💪</div>
+        </div>
+        <button class="slider-btn prev" onclick="slide(this,-1)">&#8249;</button>
+        <button class="slider-btn next" onclick="slide(this,1)">&#8250;</button>
+        <div class="slider-dots">
+          <div class="dot active"></div><div class="dot"></div><div class="dot"></div>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">LEGO Batman Mech Armor Ultimate Battle</div>
+        <div class="product-stars">★★★★★ <span>200 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-22%</span>
+          <span class="product-price-original">Rp 1.100.000</span>
+          <span class="product-price-final">Rp 858.000</span>
+        </div>
+        <span class="product-badge badge-prime">PRIME</span>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <div class="slider-wrapper">
+        <div class="slider-track">
+          <div class="slide">🏰</div>
+          <div class="slide">🦇</div>
+          <div class="slide">🌑</div>
+        </div>
+        <button class="slider-btn prev" onclick="slide(this,-1)">&#8249;</button>
+        <button class="slider-btn next" onclick="slide(this,1)">&#8250;</button>
+        <div class="slider-dots">
+          <div class="dot active"></div><div class="dot"></div><div class="dot"></div>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">LEGO Batman Wayne Manor Collector Set</div>
+        <div class="product-stars">★★★★☆ <span>145 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-12%</span>
+          <span class="product-price-original">Rp 2.000.000</span>
+          <span class="product-price-final">Rp 1.760.000</span>
+        </div>
+        <span class="product-badge badge-bestseller">BEST SELLER</span>
+      </div>
+    </div>
+ 
+  </div>
+</section>

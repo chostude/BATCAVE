@@ -1,0 +1,192 @@
+<style>
+    #products {
+      background: transparent;
+      padding: 60px 20px;
+      font-family: 'Orbitron', sans-serif;
+    }
+ 
+    .products-title {
+      text-align: center;
+      color: #FFCC00;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-family: 'Audiowide', sans-serif;
+    }
+ 
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+ 
+    .product-card {
+      background: rgba(0,0,0,0.75);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      cursor: pointer;
+      border: 1px solid #333;
+    }
+ 
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(255, 204, 0, 0.3);
+      border-color: #FFCC00;
+    }
+ 
+    .slider-wrapper {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+      background: #111;
+    }
+ 
+    .slider-track {
+      display: flex;
+      transition: transform 0.4s ease;
+      height: 100%;
+    }
+ 
+    .slide {
+      min-width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      background: #1a1a1a;
+      color: #FFCC00;
+    }
+ 
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+ 
+    .slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.6);
+      border: none;
+      color: #FFCC00;
+      font-size: 1.2rem;
+      padding: 6px 10px;
+      cursor: pointer;
+      z-index: 2;
+      border-radius: 4px;
+    }
+ 
+    .slider-btn:hover { background: rgba(255,204,0,0.3); }
+    .slider-btn.prev { left: 6px; }
+    .slider-btn.next { right: 6px; }
+ 
+    .slider-dots {
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6px;
+    }
+ 
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.4);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+ 
+    .dot.active { background: #FFCC00; }
+ 
+    .product-info {
+      padding: 14px 16px 18px;
+    }
+ 
+    .product-name {
+      color: #e0e0e0;
+      font-size: 0.75rem;
+      font-weight: 600;
+      line-height: 1.4;
+      margin-bottom: 10px;
+      font-family: 'Audiowide', sans-serif;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+ 
+    .product-stars {
+      color: #FFCC00;
+      font-size: 0.8rem;
+      margin-bottom: 8px;
+      font-family: sans-serif;
+    }
+ 
+    .product-stars span {
+      color: #888;
+      margin-left: 4px;
+      font-size: 0.72rem;
+    }
+ 
+    .product-pricing {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+ 
+    .product-discount-badge {
+      background: #FFCC00;
+      color: #1a1a1a;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-family: sans-serif;
+    }
+ 
+    .product-price-original {
+      color: #888;
+      font-size: 0.75rem;
+      text-decoration: line-through;
+      font-family: sans-serif;
+    }
+ 
+    .product-price-final {
+      color: #FFCC00;
+      font-size: 1rem;
+      font-weight: 700;
+      width: 100%;
+      margin-top: 4px;
+      font-family: 'Audiowide', sans-serif;
+    }
+ 
+    .product-badge {
+      margin-top: 8px;
+      display: inline-block;
+      font-size: 0.62rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 3px;
+      letter-spacing: 1px;
+      font-family: sans-serif;
+    }
+ 
+    .badge-prime { background: #0070f3; color: white; }
+    .badge-bestseller { background: #ff6600; color: white; }
+ 
+    @media (max-width: 900px) {
+      .products-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    }
+  </style>
+</head>
+<body>

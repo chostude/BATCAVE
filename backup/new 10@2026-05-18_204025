@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𓆩♡𓆪BATCAVE | Sasha Aksari</title>
+	<link rel="icon" type="image/png" href="img/logo-batman-fiks.png">
+	<meta name="theme-color" content="#111827">
+	<meta name="description" content="The ultimate LEGO Batman garage">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Oswald:wght@600&family=Orbitron:wght@800&family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css"> <!-- fontawesome -->
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/tooplate-antique-cafe.css">
+    
+
+</head>
+<body>    
+    <nav id="tm-nav" class="fixed w-full">
+    <div class="tm-container mx-auto px-2 md:py-6 text-right" style="margin-right: 60px;">
+        <button class="md:hidden py-2 px-2" id="menu-toggle"><i class="fas fa-2x fa-bars tm-text-gold"></i></button>
+        <ul class="mb-3 md:mb-0 text-2xl font-normal flex justify-end flex-col md:flex-row" style="font-family: 'Audiowide', sans-serif;">
+    <li class="inline-block mb-4 mx-4"><a href="#intro" class="tm-text-gold py-1 md:py-3 px-4" onmouseover="this.style.color='white'" onmouseout="this.style.color='#FFCC00'">Home</a></li>
+    <li class="inline-block mb-4 mx-4"><a href="#menu" class="tm-text-gold py-1 md:py-3 px-4" onmouseover="this.style.color='white'" onmouseout="this.style.color='#FFCC00'">Collection</a></li>
+    <li class="inline-block mb-4 mx-4"><a href="#about" class="tm-text-gold py-1 md:py-3 px-4" onmouseover="this.style.color='white'" onmouseout="this.style.color='#FFCC00'">About</a></li>
+    <li class="inline-block mb-4 mx-4"><a href="#contact" class="tm-text-gold py-1 md:py-3 px-4" onmouseover="this.style.color='white'" onmouseout="this.style.color='#FFCC00'">Contact</a></li>
+</ul>
+    </div>            
+</nav>
+
+<!-- Intro -->
+<div id="intro" class="video-section">
+<video autoplay muted loop playsinline class="video-bg">
+<source src="video/batman-background-two.mp4" type="video/mp4">
+</video>
+        <div class="container mx-auto px-2 tm-intro-width">
+            <div class="sm:pb-60 sm:pt-48 py-20">
+                <div class="bg-black bg-opacity-70 p-12 mb-5 text-center rounded-xl">
+                    <h1 class="text-white tm-logo-font mb-5 whitespace-nowrap" style="font-size: 2.8rem;">The Batcave</h1>
+                    <p class="tm-text-gold tm-text-2xl" style="font-size: 1.7rem;">the ultimate LEGO<br>Batman garage</p>
+                </div>    
+                <div style="background-color: rgba(0, 0, 0, 0.7);" class="p-10 mb-5 rounded-xl">
+                    <p class="text-white leading-8 text-sm font-light">
+                      Explore Batman vehicles and LEGO Batmobiles in this simple project by Sasha Aksari, a student from MAN 1 Yogyakarta.
+                    	If you have any question, please <a rel="nofollow" href="https://wa.me/+62895339628028" target="_parent" style="font-family: 'Audiowide', sans-serif; color: #FFCC00;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#FFCC00'" onclick="this.style.color='#ff0000'" >send us a message</a></p>
+                </div>
+                <div class="text-center">
+                    <div class="inline-block">
+                        <a href="#menu" class="flex justify-center items-center bg-black bg-opacity-70 py-6 px-8 rounded-lg font-semibold tm-text-2xl tm-text-gold hover:text-gray-200 transition">
+                            <img src="img/logo-batman-fiks.png" style="width:50px;" class="mr-40">
+                            <span onmouseover="this.style.color='white'" onmouseout="this.style.color='#FFCC00'" onclick="this.style.color='#ff0000'">Discover The Batcave Fleet</span>                       
+                        </a>
+                    </div>                    
+                </div>                
+            </div>
+        </div>        
+    </div>
+    <!-- Cafe Menu -->
+    <div id="menu" class="video-section">
+  <video autoplay muted loop playsinline class="video-bg">
+    <source src="video/batman-background-three.mp4" type="video/mp4">
+  </video>
+        <section id="products">
+  <div style="text-align: center; margin-bottom: 40px;">
+    <h2 class="products-title" style="background-color: rgba(0,0,0,0.7); display: inline-block; padding: 20px 40px; border-radius: 12px;">The Batcave Fleet</h2>
+</div>
+  <div class="products-grid">
+ 
+    <div class="product-card">
+      <div class="slider-wrapper">
+        <div class="slider-track">
+    <div class="slide"><img src="img/c-btm-1.jpeg" alt="Batmobile"></div>
+    <div class="slide"><img src="img/c-btm-(1).jpeg" alt="Batmobile 2"></div>
+</div>
+<button class="slider-btn prev" onclick="slide(this,-1)">&#8249;</button>
+<button class="slider-btn next" onclick="slide(this,1)">&#8250;</button>
+<div class="slider-dots">
+    <div class="dot active"></div><div class="dot"></div>
+</div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">LEGO Batman Batmobile Classic Series 1966</div>
+        <div class="product-stars">★★★★★ <span>100 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-30%</span>
+          <span class="product-price-original">Rp 1.000.000</span>
+          <span class="product-price-final">Rp 700.000</span>
+        </div>
+        <span class="product-badge badge-prime">PRIME</span>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <div class="slider-wrapper">
+        <div class="slider-track">
+    <div class="slide"><img src="img/c-btm-9.jpeg" alt="Batmobile"></div>
+    <div class="slide"><img src="img/c-btm-(9).jpeg" alt="Batmobile 2"></div>
+</div>
+<button class="slider-btn prev" onclick="slide(this,-1)">&#8249;</button>
+<button class="slider-btn next" onclick="slide(this,1)">&#8250;</button>
+<div class="slider-dots">
+    <div class="dot active"></div><div class="dot"></div>
+</div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">LEGO Batman Batcave Shadow Box Edition</div>
+        <div class="product-stars">★★★★☆ <span>88 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-20%</span>
+          <span class="product-price-original">Rp 1.500.000</span>
+          <span class="product-price-final">Rp 1.200.000</span>
+        </div>
+        <span class="product-badge badge-bestseller">BEST SELLER</span>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <div class="slider-wrapper">
+        <div class="slider-track">
+    <div class="slide"><img src="img/c-btm-4.jpeg" alt="Batmobile"></div>
+    <div class="slide"><img src="img/c-btm-(4).jpeg" alt="Batmobile 2"></div>
+</div>
+<button class="slider-btn prev" onclick="slide(this,-1)">&#8249;</button>
+<button class="slider-btn next" onclick="slide(this,1)">&#8250;</button>
+<div class="slider-dots">
+    <div class="dot active"></div><div class="dot"></div>
+</div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">LEGO Batman Batwing Ultimate Fighter</div>
+        <div class="product-stars">★★★★★ <span>120 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-15%</span>
+          <span class="product-price-original">Rp 900.000</span>
+          <span class="product-price-final">Rp 765.000</span>
+        </div>
+        <span class="product-badge badge-prime">PRIME</span>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <div class="slider-wrapper">
+        <div class="slider-track">
+    <div class="slide"><img src="img/c-btm-3.jpeg" alt="Batmobile"></div>
+    <div class="slide"><img src="img/c-btm-(3).jpeg" alt="Batmobile 2"></div>
+</div>
+<button class="slider-btn prev" onclick="slide(this,-1)">&#8249;</button>
+<button class="slider-btn next" onclick="slide(this,1)">&#8250;</button>
+<div class="slider-dots">
+    <div class="dot active"></div><div class="dot"></div>
+</div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">LEGO Batman Batcycle Night Rider</div>
+        <div class="product-stars">★★★★☆ <span>75 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-25%</span>
+          <span class="product-price-original">Rp 800.000</span>
+          <span class="product-price-final">Rp 600.000</span>
+        </div>
+        <span class="product-badge badge-bestseller">BEST SELLER</span>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <div class="slider-wrapper">
+        <div class="slider-track">
+    <div class="slide"><img src="img/c-btm-2.jpeg" alt="Batmobile"></div>
+    <div class="slide"><img src="img/c-btm-(2).jpeg" alt="Batmobile 2"></div>
+</div>
+<button class="slider-btn prev" onclick="slide(this,-1)">&#8249;</button>
+<button class="slider-btn next" onclick="slide(this,1)">&#8250;</button>
+<div class="slider-dots">
+    <div class="dot active"></div><div class="dot"></div>
+</div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">LEGO Batman Batcopter Rescue Mission</div>
+        <div class="product-stars">★★★★★ <span>55 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-10%</span>
+          <span class="product-price-original">Rp 750.000</span>
+          <span class="product-price-final">Rp 675.000</span>
+        </div>
+        <span class="product-badge badge-prime">PRIME</span>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <div class="slider-wrapper">
+        <div class="slider-track">
+    <div class="slide"><img src="img/c-btm-6.jpeg" alt="Batmobile"></div>
+    <div class="slide"><img src="img/c-btm-(6).jpeg" alt="Batmobile 2"></div>
+</div>
+<button class="slider-btn prev" onclick="slide(this,-1)">&#8249;</button>
+<button class="slider-btn next" onclick="slide(this,1)">&#8250;</button>
+<div class="slider-dots">
+    <div class="dot active"></div><div class="dot"></div>
+</div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">LEGO Batman Batboat Gotham Harbor</div>
+        <div class="product-stars">★★★★☆ <span>62 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-18%</span>
+          <span class="product-price-original">Rp 650.000</span>
+          <span class="product-price-final">Rp 533.000</span>
+        </div>
+        <span class="product-badge badge-bestseller">BEST SELLER</span>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <div class="slider-wrapper">
+        <div class="slider-track">
+    <div class="slide"><img src="img/c-btm-7.jpeg" alt="Batmobile"></div>
+    <div class="slide"><img src="img/c-btm-(7).jpeg" alt="Batmobile 2"></div>
+</div>
+<button class="slider-btn prev" onclick="slide(this,-1)">&#8249;</button>
+<button class="slider-btn next" onclick="slide(this,1)">&#8250;</button>
+<div class="slider-dots">
+    <div class="dot active"></div><div class="dot"></div>
+</div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">LEGO Batman Mech Armor Ultimate Battle</div>
+        <div class="product-stars">★★★★★ <span>200 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-22%</span>
+          <span class="product-price-original">Rp 1.100.000</span>
+          <span class="product-price-final">Rp 858.000</span>
+        </div>
+        <span class="product-badge badge-prime">PRIME</span>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <div class="slider-wrapper">
+       <div class="slider-track">
+    <div class="slide"><img src="img/c-btm-10.jpeg" alt="Batmobile"></div>
+    <div class="slide"><img src="img/c-btm-(10).jpeg" alt="Batmobile 2"></div>
+</div>
+<button class="slider-btn prev" onclick="slide(this,-1)">&#8249;</button>
+<button class="slider-btn next" onclick="slide(this,1)">&#8250;</button>
+<div class="slider-dots">
+    <div class="dot active"></div><div class="dot"></div>
+</div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">LEGO Batman Wayne Manor Collector Set</div>
+        <div class="product-stars">★★★★☆ <span>145 ulasan</span></div>
+        <div class="product-pricing">
+          <span class="product-discount-badge">-12%</span>
+          <span class="product-price-original">Rp 2.000.000</span>
+          <span class="product-price-final">Rp 1.760.000</span>
+        </div>
+        <span class="product-badge badge-bestseller">BEST SELLER</span>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+</div>
+    <div id="about" class="video-section">
+  <video autoplay muted loop playsinline class="video-bg">
+    <source src="video/batman-background-four.mp4" type="video/mp4">
+  </video>
+        <div class="container mx-auto tm-container py-24 sm:py-48">
+            <div class="tm-item-container sm:ml-auto sm:mr-12 mx-auto sm:px-0 px-4">
+                <div class="bg-black bg-opacity-70 p-12 pb-14 rounded-xl mb-5">
+                    <h2 class="mb-6 text-4xl font-medium" style="font-family: 'Audiowide', sans-serif; color: #FFCC00;">About The Batcave Fleet</h2>
+                    <p class="mb-6 text-white text-base leading-8">
+                       The Batcave is a place for every Batman fan to explore iconic vehicles, discover legendary Batmobiles, and experience the world of Gotham City.
+                  </p>
+                    <p class="text-base text-white leading-8">
+                         If you enjoy this project, feel free to <a rel="nofollow" href="https://www.instagram.com/sashaaksari?igsh=em9tNGl2eTNoYXF5" target="_parent" style="font-family: 'Audiowide', sans-serif; color: #FFCC00;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#FFCC00'" onclick="this.style.color='#ff0000'">support us</a>
+						 by sharing the Batcave with your friends. Every visit means a lot. Thank you for visiting The Batcave.</p>
+                </div>
+                <a href="#contact" class="inline-block transition text-xl pt-3 pb-4 px-8 rounded-md" style="font-family: 'Audiowide', sans-serif; color: #FFCC00; background-color: rgba(0,0,0,0.7);" onmouseover="this.style.color='white'" onmouseout="this.style.color='#FFCC00'" onclick="this.style.color='#ff0000'">
+                  <i class="far fa-comments mr-4"></i>
+                    Contact
+                </a>       
+        </div>        
+    </div>
+    <div id="contact" class="video-section">
+  <video autoplay muted loop playsinline class="video-bg">
+    <source src="video/batman-background-five.mp4" type="video/mp4">
+  </video>
+        <div class="container mx-auto tm-container pt-24 pb-48 sm:py-48">
+    <div class="flex flex-col lg:flex-row justify-around items-center lg:items-stretch">
+        <div class="flex-1 flex flex-col m-5 tm-item-container h-full">
+            <div class="rounded-xl px-10 py-12 mb-5 bg-black bg-opacity-70 flex-1">
+                <h2 class="text-3xl mb-6" style="font-family: 'Audiowide', sans-serif; color: #FFCC00;">Contact Us</h2>
+                <p class="mb-6 text-white text-lg leading-8">
+                    MENARA ASTRA, DKI Jakarta   
+                </p>
+                <p class="text-lg">
+                    <span class="block mb-2"><span style="color: white;">Tel: </span><a href="https://wa.me/+62895339628028" class="transition" style="color: #FFCC00;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#FFCC00'" onclick="this.style.color='#ff0000'">0895339628028</a></span>
+                    <span class="block"><span style="color: white;">Email: </span><a href="mailto:nublatunnisasha@gmail.com" class="transition" style="color: #FFCC00;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#FFCC00'" onclick="this.style.color='#ff0000'">nublatunnisasha@gmail.com</a></span>
+                </p>
+            </div>
+            <div>
+    <a href="https://maps.app.goo.gl/iVv8Z8LkEpHvzT697" class="inline-block transition text-xl pt-3 pb-4 px-8 rounded-xl" style="font-family: 'Audiowide', sans-serif; color: #FFCC00; background-color: rgba(0,0,0,0.7);" onmouseover="this.style.color='white'" onmouseout="this.style.color='#FFCC00'" onclick="this.style.color='#ff0000'">
+        <i class="fas fa-map-marked-alt mr-4"></i>
+        Open Maps
+    </a>
+</div>
+        </div>
+                <div class="flex-1 rounded-xl p-12 pb-14 m-5 bg-black bg-opacity-70 tm-item-container">
+                    <form action="" method="POST" class="text-lg">
+                        <input type="text" name="name" class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" placeholder="Name" required="" />
+                        <input type="email" name="email" class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" placeholder="Email" required="" />
+                        <textarea rows="6" name="message" class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" placeholder="Message" required=""></textarea>
+                        <div class="text-right">
+                   <button type="submit" class="transition" style="color: #FFCC00;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#FFCC00'" onclick="this.style.color='#ff0000'">Send it</button>
+                </div>                        
+                    </form>
+                </div>
+            </div>
+            <footer class="absolute bottom-0 left-0 w-full">
+                <div class="text-white container mx-auto tm-container p-8 text-lg flex flex-col md:flex-row justify-between">
+                    <span style="font-family: 'Audiowide', sans-serif;">Copyright 2026 Sasha Aksari. All rights reserved.</span>
+                    <span class="mt-5 md:mt-0" style="font-family: 'Audiowide', sans-serif;">
+    <span style="color: white;">Design: </span><a href="https://www.instagram.com/sashaaksari?igsh=em9tNGl2eTNoYXF5" target="_parent" style="color: #FFCC00;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#FFCC00'" onclick="this.style.color='#ff0000'">@sashaaksari</a>
+</span>
+        </div>                
+            </footer>
+        </div>        
+    </div>    
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script>
+
+        function checkAndShowHideMenu() {
+            if(window.innerWidth < 768) {
+                $('#tm-nav ul').addClass('hidden');                
+            } else {
+                $('#tm-nav ul').removeClass('hidden');
+            }
+        }
+
+        $(function(){
+            var tmNav = $('#tm-nav');
+            tmNav.singlePageNav();
+
+            checkAndShowHideMenu();
+            window.addEventListener('resize', checkAndShowHideMenu);
+
+            $('#menu-toggle').click(function(){
+                $('#tm-nav ul').toggleClass('hidden');
+            });
+
+            $('#tm-nav ul li').click(function(){
+                if(window.innerWidth < 768) {
+                    $('#tm-nav ul').addClass('hidden');
+                }                
+            });
+
+            $(document).scroll(function() {
+                var distanceFromTop = $(document).scrollTop();
+
+                if(distanceFromTop > 100) {
+                    tmNav.addClass('scroll');
+                } else {
+                    tmNav.removeClass('scroll');
+                }
+            });
+            
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+	
+<script>
+document.querySelectorAll('a, button').forEach(function(el) {
+    var originalColor = el.style.color || '#FFCC00';
+    el.addEventListener('mouseleave', function() {
+        this.style.setProperty('color', originalColor, 'important');
+    });
+});
+</script>
+
+<script>
+function slide(btn, dir) {
+  var wrapper = btn.closest('.slider-wrapper');
+  var track = wrapper.querySelector('.slider-track');
+  var dots = wrapper.querySelectorAll('.dot');
+  var total = track.children.length;
+  var current = parseInt(track.dataset.current || 0);
+  current = (current + dir + total) % total;
+  track.dataset.current = current;
+  track.style.transform = 'translateX(-' + (current * 100) + '%)';
+  dots.forEach(function(d, i) {
+    d.classList.toggle('active', i === current);
+  });
+}
+
+document.querySelectorAll('.dot').forEach(function(dot) {
+  dot.addEventListener('click', function() {
+    var wrapper = dot.closest('.slider-wrapper');
+    var track = wrapper.querySelector('.slider-track');
+    var dots = wrapper.querySelectorAll('.dot');
+    var idx = Array.from(dots).indexOf(dot);
+    track.dataset.current = idx;
+    track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+    dots.forEach(function(d, i) { d.classList.toggle('active', i === idx); });
+  });
+});
+</script>
+
+
+
+</body>
+</html>

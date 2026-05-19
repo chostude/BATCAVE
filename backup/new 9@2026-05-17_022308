@@ -1,0 +1,27 @@
+<script>
+function slide(btn, dir) {
+  var wrapper = btn.closest('.slider-wrapper');
+  var track = wrapper.querySelector('.slider-track');
+  var dots = wrapper.querySelectorAll('.dot');
+  var total = track.children.length;
+  var current = parseInt(track.dataset.current || 0);
+  current = (current + dir + total) % total;
+  track.dataset.current = current;
+  track.style.transform = 'translateX(-' + (current * 100) + '%)';
+  dots.forEach(function(d, i) {
+    d.classList.toggle('active', i === current);
+  });
+}
+ 
+document.querySelectorAll('.dot').forEach(function(dot) {
+  dot.addEventListener('click', function() {
+    var wrapper = dot.closest('.slider-wrapper');
+    var track = wrapper.querySelector('.slider-track');
+    var dots = wrapper.querySelectorAll('.dot');
+    var idx = Array.from(dots).indexOf(dot);
+    track.dataset.current = idx;
+    track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+    dots.forEach(function(d, i) { d.classList.toggle('active', i === idx); });
+  });
+});
+</script>
